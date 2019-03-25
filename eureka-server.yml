@@ -1,0 +1,15 @@
+server:
+  port: 9091
+
+eureka:
+  instance:
+    hostname: localhost #Host onde será iniciado o servidor do Eureka
+  client:
+    registerWithEureka: true
+    fetchRegistry: false  #Os clientes do Eureka obtêm as informações de registro do servidor e as armazenam no local. 
+                          #Depois disso, os clientes usam essa informação para encontrar outros serviços. Como essa
+                          #aplicação é o próprio servidor do Eureka, desabilitamos esta busca.
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #Localização do Eureka Server, já que essa aplicação vai se auto registrar
+  service:
+    wait-time-in-ms-when-sync-empty: 3000 #tempo em milisegundos que o Eureka Server irá esperar entre as sincronizações com os clientes
