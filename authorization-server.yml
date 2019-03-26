@@ -27,7 +27,7 @@ spring:
   datasource:
     data: classpath:/sql/data.sql #Arquivo sql que será executado após a propriedade schema.
     driver-class-name: com.mysql.jdbc.Driver
-    password: root
+    password: root1234
     platform: mysql
     schema: classpath:/sql/schema.sql #arquivo com a estrutura do banco de dados. Como as classes que mapeiam os dados de segurança estão nas bibliotecas do Spring, elas não são criadas automaticamentee pelo JPA
     url: jdbc:mysql://springcloud.cqjgc0jmeyma.us-east-1.rds.amazonaws.com:3306/springCloudDB?verifyServerCertificate=false&useSSL=false&requireSSL=false #url de acesso ao banco de dados
