@@ -25,7 +25,7 @@ security:
 
 spring:
   datasource:
-    data: classpath: /sql/data.sql #Arquivo sql que será executado após a propriedade schema.
+    data: classpath:/sql/data.sql #Arquivo sql que será executado após a propriedade schema.
     driver-class-name: com.mysql.jdbc.Driver
     password: root
     platform: mysql
