@@ -5,7 +5,7 @@ eureka:
   instance:
     hostname: localhost #Host onde será iniciado o servidor do Eureka
   client:
-    registerWithEureka: false #Mesmo sendo um servidor do Eureka, essa aplicação não deixa de ser um Microservice como os outros, portanto ele dee se auto registrar no eureka.
+    registerWithEureka: true #Mesmo sendo um servidor do Eureka, essa aplicação não deixa de ser um Microservice como os outros, portanto ele dee se auto registrar no eureka.
     fetchRegistry: false  #Os clientes do Eureka obtêm as informações de registro do servidor e as armazenam no local. 
                           #Depois disso, os clientes usam essa informação para encontrar outros serviços. Como essa
                           #aplicação é o próprio servidor do Eureka, desabilitamos esta busca.
