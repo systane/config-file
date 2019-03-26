@@ -14,7 +14,7 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 security:
-  ouath2:
+  oauth2:
     client:
       access-token-validity-seconds: 1800 #tempo, em segundos, de duração do token de acesso
       authorized-grant-types: password, refresh_token #Qual o tipo do pedido de concessão de acesso. Se o client vai solicitar um token utilizando usuário e senha ou se vai retonvar um já existente.
