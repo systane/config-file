@@ -30,7 +30,7 @@ spring:
     password: root
     platform: mysql
     schema: classpath:/sql/schema.sql #arquivo com a estrutura do banco de dados. Como as classes que mapeiam os dados de segurança estão nas bibliotecas do Spring, elas não são criadas automaticamentee pelo JPA
-    url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false #url de acesso ao banco de dados
+    url: jdbc:mysql://springcloud.cqjgc0jmeyma.us-east-1.rds.amazonaws.com:3306/springCloudDB?verifyServerCertificate=false&useSSL=false&requireSSL=false #url de acesso ao banco de dados
     username: root
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
