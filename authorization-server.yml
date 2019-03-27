@@ -19,7 +19,7 @@ security:
       client_id: coderef #Identificador único que será usado pelo Client para solicitar concessão de acesso
       client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2 #Senha para ser usada em conjunto com client_id como autenticação básico do client que está tentando obter um token de acesso
       resource-ids: resources #Identificador dos recursos disponíveis, se especificado aqui também deve ser especificado no servidor de recursos.
-      access-token-validity-seconds: 180 #tempo, em segundos, de duração do token de acesso
+      access-token-validity-seconds: 1800 #tempo, em segundos, de duração do token de acesso
       authorized-grant-types: password, refresh_token #Qual o tipo do pedido de concessão de acesso. Se o client vai solicitar um token utilizando usuário e senha ou se vai retonvar um já existente.
       scope: read, write #Os escopos que o Client terá acesso.
 
