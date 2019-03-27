@@ -19,7 +19,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     password: root1234
     platform: mysql
-    url: jdbc:mysql://springcloud.cqjgc0jmeyma.us-east-1.rds.amazonaws.com:3306/springCloudDB?verifyServerCertificate=false&useSSL=false&requireSSL=false #url de acesso ao banco de dados
+    url: jdbc:mysql://springcloud.cqjgc0jmeyma.us-east-1.rds.amazonaws.com:3306/testEurekaDB?verifyServerCertificate=false&useSSL=false&requireSSL=false #url de acesso ao banco de dados
     username: root
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
