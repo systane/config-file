@@ -5,6 +5,14 @@ eureka:
   instance:
     hostname: localhost #Host onde será iniciado o servidor do Eureka
   client:
+  
+    #AMAZON SUPPORT
+    #availability-zones.[region] = [az1], [az2]
+    #availability-zones.us-east-1=us-east-1b, us-east-1e
+    
+    #service-url.[zone]=http://[eip-dns]/eureka
+    #service-url.us-east-1b=http://ec2.34-192-167-121.compute-1.amazonaws.com:8761/eureka
+    
     registerWithEureka: true #Mesmo sendo um servidor do Eureka, essa aplicação não deixa de ser um Microservice como os outros, portanto ele dee se auto registrar no eureka.
     fetchRegistry: false  #Os clientes do Eureka obtêm as informações de registro do servidor e as armazenam no local. 
                           #Depois disso, os clientes usam essa informação para encontrar outros serviços. Como essa
